@@ -1,0 +1,46 @@
+
+
+.modal-img{
+  width: 100%;
+  height: auto;
+  max-height: 50rem;
+  object-fit: cover;
+  border: 1rem;
+  opacity: 0.4;
+}
+
+.modal-title{
+  font-family: 'Bebas Neue', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: underline;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color:#dfaeae
+}
+
+.modal-info,
+.modal-date{
+  font-size: 1.5rem;  
+  color: #cc94e2;
+  margin-top: 1rem;
+}
+
+.modal-text{
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: #a1b50a;
+  margin-top: 1rem;
+}
+
+.read-more{
+  font-size: 1.6rem;
+  color: #000000;
+  text-decoration: underline;
+  margin-top: 3rem;
+  display: inline-block;
+  width: 18rem;
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 2rem;
+  text-transform: uppercase;
+}

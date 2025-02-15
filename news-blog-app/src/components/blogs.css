@@ -1,0 +1,215 @@
+.blogs{
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+}
+
+.blogs-left{
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+  border-radius: 1rem 0 0 1rem;
+  position: relative;
+}
+
+.blogs-left img{
+  width: 15rem;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1rem solid #280b4e;
+  position: absolute;
+  top: 50%;
+  right: -7.5rem;
+  transform: translateY(-50%);
+}
+
+.blogs-right{
+  width: 50%;
+  height: 100%;
+ 
+  border-radius: 0 1rem 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.post-btn{
+  width: clamp(15rem,16cqi,30rem);
+  aspect-ratio: 4/1;
+  background: linear-gradient(to right, #e5f7c0, #61a704);
+  border: none;
+  border-radius: 4rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: clamp(1.4rem,1.5cqi,3rem);
+  text-shadow: #2c3e50 0.1em 0.1em 0.2em;
+  cursor: pointer;
+}
+
+.post-btn:active{
+  transform: translateY(0.2rem);
+}
+
+.submitted-post{
+  font-size: 4rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #dbe27a, #5f721f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blogs-form.visible{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5rem;
+}
+
+.blogs-form.hidden{
+  display: none;
+}
+
+.blogs-form h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: clamp(2rem,4cqi,5rem);
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ccb5d7, #d35ae3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blogs-form form{
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+
+}
+
+.file-upload{
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  font-size: 2rem;
+  color: #dcb23f;
+  cursor: pointer;
+}
+
+.file-upload i{
+  font-size: 4rem;
+  color: aliceblue;
+}
+.blogs-form input[type="file"]{
+  display: none;
+}
+
+.title-input,.text-input{
+  width: clamp(15rem,25cqi,45rem);
+  background: transparent;
+  border: none;
+  border-bottom: .3rem solid #706f6e;
+  color: aliceblue;
+}
+
+.text-input,.title-input::placeholder{
+  color: #b9b8b6;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.text-input::placeholder{
+  color: #b9b8b6;
+ font-size: 1.5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.title-input{
+  font-size: 2.5rem;
+}
+
+.text-input{
+  font-size: 2rem;
+  aspect-ratio: 5/3;
+  resize: none;
+}
+
+.text-input::-webkit-scrollbar{
+  display: none;
+}
+
+.title-input.invalid,.text-input.invalid{
+  border-color: red;
+  border-bottom: 0.1rem solid red;
+}
+
+.title-input.invalid::placeholder,.text-input.invalid::placeholder{
+  color: red;
+  
+}
+
+.submit-btn{
+  height: 5rem;
+  background: linear-gradient(to right, #dedca4, #d3b330);
+  border: none;
+  border-radius: 3rem;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  text-shadow: #2c3e50 0.1em 0.1em 0.2em;
+  cursor: pointer;
+}
+
+.submit-btn:active{
+  transform: translateY(0.2rem);
+}
+
+.close-btn{
+  position: absolute;
+  top: 3rem;
+  right: 2.5rem;
+  background: linear-gradient(to right, #eeb78c, #aa7e05);
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 1.5rem;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-btn i{
+  font-size: 3rem;
+}
+
+@media(max-width:900px){
+  .blogs-left{
+    background: none;
+    width: 100%;
+  }
+
+  .blogs-left img{
+    top: 10%;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .blogs-right{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+  }
+
+  .close-btn{
+    top: 10rem;
+    right: 4rem;
+  }
+
+  .blogs-form{
+    margin-top: 15rem;
+  }
+
+  .title-input,.title-input{
+    width: 40rem;
+  }
+}

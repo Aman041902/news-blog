@@ -1,0 +1,130 @@
+.weather{
+  width: 100%;
+  min-width: 28rem;
+  height: 45%;
+  background-color: #2e1c55;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3rem;
+}
+
+.search{
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  align-items: center;
+}
+
+.search-top{
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.search-top i{
+  font-size: 2rem;
+  color: rgb(216, 224, 126);
+}
+
+.location{
+  font-family: 'Times New Roman', Times, serif;
+}
+/* Parent container styling */
+/* Parent container styling */
+.search-loc {
+  position: relative;
+  width: 100%; /* Adjust as needed for responsiveness */
+  max-width: 30rem; /* Limit width */
+  margin: 0 auto; /* Center alignment */
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* Input styling */
+.search-loc input {
+  width: 100%; /* Full width of the container */
+  height: 3.5rem; /* Adjust for a sleek height */
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #a4a1a8;
+  font-size: 1.2rem;
+  color: beige;
+  padding-right: 3rem; /* Space for the icon */
+  box-sizing: border-box; /* Ensure padding doesn't break layout */
+  transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth border effect */
+  transition-duration: 0.7s; /* Explicit transition duration */
+}
+
+/* Focus state */
+.search-loc input:focus {
+  outline: none;
+  border-bottom: 2px solid #ffffff; /* Highlight on focus */
+}
+
+/* Placeholder styling */
+
+
+/* Icon styling */
+.search-loc i {
+  position: absolute;
+  top: 50%;
+  right: 1rem; /* Keep some padding from the edge */
+  transform: translateY(-50%);
+  font-size: 1.8rem;
+  color: #a4a2a7;
+  
+  transition: color 0.3s ease; /* Smooth hover effect */
+  transition-duration: 0.3s; /* Explicit transition duration */
+}
+
+/* Add hover effect for input */
+.search-loc:hover input {
+  border-bottom: 2px solid #ffffff; /* Subtle highlight on hover */
+}
+
+/* Add hover effect for the icon */
+.search-loc:hover i {
+  color: #ffffff; /* Change color on hover */
+}
+
+.weather-data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+
+.weather-data i{
+  font-size: 5rem;
+  
+}
+
+.weather-type, .temp{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+  color: violet;
+}
+
+.not-found{
+  font-family: 'Bebas Neue', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  color: #bb5b5b;
+  text-align: center;
+ 
+}
+
+@media(max-width:900px){
+  .weather{
+    width: 100%;
+  }
+
+  .search-loc input{
+    width: 30rem;
+  }
+}

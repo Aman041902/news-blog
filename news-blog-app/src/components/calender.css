@@ -1,0 +1,95 @@
+.calender{
+  width: 100%;
+  min-width: 28rem;
+  height: calc(55% - 2rem);
+  background-color: #2e1c55;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  display: grid;
+  place-items: center;
+}
+
+.nav-date{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.nav-date h2{
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(123, 120, 120);
+}
+
+.buttons{
+  display: flex;
+  column-gap: 1rem;
+  margin-left: auto;
+}
+
+.buttons i{
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  border-radius: 50%;
+  cursor: pointer;
+  color: rgb(118, 78, 19);
+  font-size: 2rem;
+  
+}
+
+.weekdays{
+ 
+  width: 100%;
+  display: flex;
+  margin:  0;
+
+}
+
+.weekdays span{
+  width: calc(100% / 7);
+  font-size: 1.2rem;
+  
+  text-transform: uppercase;
+  color: salmon;
+  display: flex;
+  justify-content: center;
+}
+
+.days{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  
+}
+
+.days span{
+  width: calc(100% / 7);
+  font-size: 1rem;
+  color: rgb(210, 201, 186);
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.curr-day{
+  background: linear-gradient(to right, #07598f, #032649);
+  color: white;
+  
+  border-radius: 50%;
+}
+
+@media(max-width:900px){
+  .calender{
+    height: 100%;
+  }
+}

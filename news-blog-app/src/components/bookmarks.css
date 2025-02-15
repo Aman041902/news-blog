@@ -1,0 +1,49 @@
+.bookmark-news-list img{
+  width: 7rem;
+  height: 7rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.bookmark-news-list{
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  gap: 1rem;
+}
+
+.item{
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.item h3{
+  font-family: 'Bebas Neue', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(189, 161, 20);
+}
+
+.delete-button{
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: rgb(161, 60, 60);
+  cursor: pointer;
+}
+
+.delete-button i{
+  font-size: 2.5rem;
+}
+
+.heading{
+  font-family: 'Bebas Neue', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
+  color: rgb(227, 153, 56);
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,29 @@
+.blogs-modal-img{
+  max-width: 100%;
+  height: 40%;
+  object-fit: cover;
+  border-radius: 1rem;
+  opacity: 0.6;
+}
+
+.blog-modal-title{
+  font-family: 'Bebas Neue', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: underline;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color:#dfaeae
+}
+
+.blog-modal-cont{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-top: 1rem;
+  color: #78dd7f;
+  overflow-y: scroll;
+  max-height: 20rem;
+}
+
+.blog-modal-cont::-webkit-scrollbar{
+  display: none;
+}
