@@ -19,6 +19,7 @@ The **News Blog App** is a **React-based** web application that allows users to:
    - 🌍 **Country-Specific News**
    - 🚀 **Space**
    - 🎬 **Entertainment**
+
 ✅ **Blog Creation & Storage** – Write and save blogs locally. 📝  
 ✅ **Weather Feature** – Check the temperature of any location. 🌡️  
 ✅ **Calendar Integration 📅**    
