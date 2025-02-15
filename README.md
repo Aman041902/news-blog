@@ -28,5 +28,5 @@ The **News Blog App** is a **React-based** web application that allows users to:
 
 ### 1️⃣ Clone the Repository  
 ```bash
-git clone https://github.com/yourusername/news-blog-app.git
-cd news-blog-app
+git clone https://github.com/Aman041902/news-blog.git
+cd news-blog
